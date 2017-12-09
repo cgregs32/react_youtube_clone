@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
 
-import App from './components/app';
-import reducers from './reducers';
+const API_KEY = 'AIzaSyDfwGMWuJZ8nfEoqPQHMtWmYuetAyK6bvc';
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+const App = () => (
 
-ReactDOM.render(
-  <Provider store={createStoreWithMiddleware(reducers)}>
-    <App />
-  </Provider>
-  , document.querySelector('.container'));
+  <div>Hi!</div>
+
+)
+
+
+ReactDOM.render(<App />, document.querySelector('.container'))
